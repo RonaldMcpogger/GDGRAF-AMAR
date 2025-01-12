@@ -1,0 +1,3 @@
+﻿  NIGHTMAN.cpp
+C:\Users\Rambutan\source\repos\NIGHTMAN\NIGHTMAN.cpp(19,15): warning C4305: 'initializing': truncation from 'double' to 'float'
+  NIGHTMAN.vcxproj -> C:\Users\Rambutan\source\repos\NIGHTMAN\x64\Debug\NIGHTMAN.exe

@@ -29,7 +29,7 @@ int main(void)
     {
 
         float a, b,z,v;
-        std::cout << Xvert[i] << ", " << Yvert[i] << "\n";
+        std::cout << Xvert[i] << ", " << Yvert[i]+.1f << "\n";
         a = (Xvert[i] * cos(rad)) - (Yvert[i] * sin(rad));
         b = (Xvert[i] * sin(rad)) + (Yvert[i] * cos(rad));
 
@@ -76,13 +76,6 @@ int main(void)
         {
             
             glVertex2f(Xvert[i], Yvert[i] + .1f);
-
-            
-            
-            
-            
-      
-            
         }
         
         glEnd();
@@ -94,13 +87,7 @@ int main(void)
 
        
     }
-    for (int i = 0;i < 8;i++)
-    {
 
-
-        std::cout << Xvert[i] << ", " << Yvert[i] << "\n";
-
-    }
    
 
     glfwTerminate();

@@ -24,6 +24,7 @@
     <ProjectGuid>{56ea3e2e-79ca-427c-982c-1f7937b58636}</ProjectGuid>
     <RootNamespace>NIGHTMAN</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>GDGRAF-AMAR</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

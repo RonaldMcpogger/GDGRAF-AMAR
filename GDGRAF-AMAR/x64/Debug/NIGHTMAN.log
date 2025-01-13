@@ -1,0 +1,3 @@
+﻿  NIGHTMAN.cpp
+C:\Users\Rambutan\source\repos\GDGRAF-AMAR\NIGHTMAN.cpp(19,15): warning C4305: 'initializing': truncation from 'double' to 'float'
+  NIGHTMAN.vcxproj -> C:\Users\Rambutan\source\repos\GDGRAF-AMAR\x64\Debug\GDGRAF-AMAR.exe

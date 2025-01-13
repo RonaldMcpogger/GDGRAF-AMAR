@@ -16,7 +16,7 @@ int main(void)
 
     float x = .92f, y = .38f;
 
-    float rad = 45 * (PI / 180);
+    float rad = (45 * PI) / 180;
 
     float Xvert[8];
     float Yvert[8];
@@ -25,7 +25,21 @@ int main(void)
     Yvert[0] = y;
 
 
+    for (int i = 0;i < 8;i++)
+    {
 
+        float a, b,z,v;
+        std::cout << Xvert[i] << ", " << Yvert[i] << "\n";
+        a = (Xvert[i] * cos(rad)) - (Yvert[i] * sin(rad));
+        b = (Xvert[i] * sin(rad)) + (Yvert[i] * cos(rad));
+
+        //round off:
+        z = std::floorf(a * 100) / 100.0f;
+        v= std::floorf(b * 100) / 100.0f;
+
+        Xvert[i + 1] = z;
+        Yvert[i + 1] = v;
+    }
 
 
 
@@ -36,7 +50,7 @@ int main(void)
         return -1;
 
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
+    window = glfwCreateWindow(640, 480, "Rameses P. Amar:    THE OCTAGON", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
@@ -60,16 +74,14 @@ int main(void)
         
         for (int i = 0;i < 8;i++)
         {
-            float a, b;
+            
             glVertex2f(Xvert[i], Yvert[i] + .1f);
 
-            a = (Xvert[i] * cos(rad)) - (Yvert[i] * sin(rad));
-            b = (Xvert[i] * sin(rad)) + (Yvert[i] * cos(rad));
-
-            Xvert[i + 1] = a;
-            Yvert[i + 1] = b;
             
-
+            
+            
+            
+      
             
         }
         
@@ -82,6 +94,14 @@ int main(void)
 
        
     }
+    for (int i = 0;i < 8;i++)
+    {
+
+
+        std::cout << Xvert[i] << ", " << Yvert[i] << "\n";
+
+    }
+   
 
     glfwTerminate();
     return 0;
